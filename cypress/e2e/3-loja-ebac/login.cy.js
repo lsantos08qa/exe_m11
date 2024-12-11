@@ -14,7 +14,7 @@ describe('Funcionalidade: Login', () => {
     cy.get('#username').type('carvalhorique@tuamaeaquelaursa.com')
     cy.get('#password').type('teste123')
     cy.get('.woocommerce-form > .button').click()
-    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain','Olá, carvalhorique (não é carvalhorique? Sair)')
+    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain','Olá, carvalhoriqueRiqueRique (não é carvalhoriqueRiqueRique? Sair)')
     })
     it('Deve exibir uma mensagem de erro ao inserir usuário inválido', () => {
     cy.get('#username').type('rique@tuamaeaquelaursa.com')
